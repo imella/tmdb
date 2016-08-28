@@ -15,7 +15,6 @@ class MovieActorsParserService < ParserService
     CSV.foreach(filename, col_sep: @column_separator) do |row|
       actor = Actor.find_by(slug: row[0])
       movies = Movie.where(slug: row[1..-1])
-      puts movies.inspect
       data << { actor: actor, movies: movies }
     end
     data
