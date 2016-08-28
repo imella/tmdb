@@ -9,4 +9,7 @@
 class Movie < ApplicationRecord
   validates :name, :slug, :year, :description, presence: true
   validates :slug, uniqueness: true
+
+  has_many :movie_actors
+  has_many :actors, through: :movie_actors
 end
