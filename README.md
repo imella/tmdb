@@ -1,24 +1,48 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tiny Movie Database - TMDB
 
-Things you may want to cover:
+### Stack
 
-* Ruby version
+* Ruby 2.3.0
+* Ruby on Rails 5.0.0.1
+* SQLite 3
 
-* System dependencies
+### How to
 
-* Configuration
+To run the application you must run the following commands
 
-* Database creation
+#### Install dependencies using bundler
 
-* Database initialization
+```
+bundle install
+```
 
-* How to run the test suite
+#### Create and migrate the database
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle exec rails db:create
+bundle exec rails db:migrate
+```
 
-* Deployment instructions
+#### Load Sample Data
 
-* ...
+```
+bundle exec rails sample:load
+```
+
+#### Run the server
+
+```
+bundle exec rails s
+```
+
+And finally open your browser and go to `http://localhost:3000`
+
+#### Testing
+
+To run the tests of the application run
+
+```
+bundle exec rake test
+```
