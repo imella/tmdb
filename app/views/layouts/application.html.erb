@@ -25,10 +25,10 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li>
+            <li class="<%= current_active_tab('movies') %>">
               <%= link_to 'Movies', movies_path %>
             </li>
-            <li>
+            <li class="<%= current_active_tab('actors') %>">
               <%= link_to 'Actors', actors_path %>
             </li>
           </ul>
