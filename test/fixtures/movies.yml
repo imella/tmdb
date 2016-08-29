@@ -1,13 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  slug: MyString
-  year: MyString
-  description: MyText
-
-two:
-  name: MyString
-  slug: MyString
-  year: MyString
-  description: MyText
+  id: 1
+  name: Test Movie
+  slug: test_movie
+  year: 1997
+  description: Long movie description
+  image_path: ''

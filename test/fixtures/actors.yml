@@ -1,13 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   name: MyString
   slug: MyString
   birthdate: 2016-08-28
   bio: MyText
-
-two:
-  name: MyString
-  slug: MyString
-  birthdate: 2016-08-28
-  bio: MyText
+  image_path: ''
